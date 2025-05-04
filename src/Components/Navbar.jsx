@@ -29,7 +29,7 @@ export const Navbar = () => {
         duration: 0.8,
       });
 
-    tl.fromTo(
+    gsap.fromTo(
       menus, {
       y: -10,
       opacity: 0,
