@@ -77,9 +77,9 @@ export const Navbar = () => {
 
   return (
     <nav ref={navRef} className="w-full h-[10vh] bg-blue-600 flex justify-between pl-5 pr-8">
-      <div id="logo" className="flex h-full gap-3 text-white justify-between items-center">
+      <div id="logo" className="flex h-full gap-3 text-white justify-between items-center select-none">
         <img className="w-14 h-14" src="/imgs/logo.png" alt="" />
-        <h4 className="font-bold text-2xl">
+        <h4 className="font-bold text-2xl hover:scale-110 duration-500">
           <span>K</span>
           <span>h</span>
           <span>y</span>
@@ -90,11 +90,11 @@ export const Navbar = () => {
       </div>
 
       <div id="menu" className={`hidden md:flex h-full justify-between gap-8 items-center text-white font-semibold tracking-wide`}>
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Services</a>
-        <a href="">Gallery</a>
-        <a href="">FAQs</a>
+        <a className='hover:pb-3 transition-all duration-300' href=''>Home</a>
+        <a className='hover:pb-3 transition-all duration-300' href="">About Us</a>
+        <a className='hover:pb-3 transition-all duration-300' href="">Services</a>
+        <a className='hover:pb-3 transition-all duration-300' href="">Gallery</a>
+        <a className='hover:pb-3 transition-all duration-300' href="">FAQs</a>
       </div>
 
       {/* style={{background: "", backdropFilter: "blur(10px)"}} */}
@@ -106,9 +106,9 @@ export const Navbar = () => {
         <a href="">FAQs</a>
       </div>
 
-      <div id='mob' className='md:hidden flex text-white text-3xl items-center font-semibold'>
-        <i onClick={toggleMenu}  class={`${menuToggle ? 'hidden' : 'block'} ri-menu-3-line`}></i>
-        <i onClick={toggleMenu}  class={`${!menuToggle ? 'hidden' : 'block'} ri-close-large-line`}></i>
+      <div id='mob' className='md:hidden flex text-white text-3xl items-center font-semibold cursor-pointer'>
+        <i onClick={toggleMenu}  className={`${menuToggle ? 'hidden' : 'block'} ri-menu-3-line`}></i>
+        <i onClick={toggleMenu}  className={`${!menuToggle ? 'hidden' : 'block'} ri-close-large-line`}></i>
       </div>
     </nav>
   )
