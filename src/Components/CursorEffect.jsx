@@ -27,7 +27,7 @@ export const CursorEffect = () => {
   return (
     <div
       ref={cursorRef}
-      className="w-4 h-4 bg-blue-400/60 z-50 rounded-full absolute pointer-events-none"
+      className="w-4 h-4 bg-blue-400/60 z-50 rounded-full fixed pointer-events-none"
     />
   );
 };
