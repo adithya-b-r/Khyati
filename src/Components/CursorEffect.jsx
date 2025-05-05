@@ -12,7 +12,7 @@ export const CursorEffect = () => {
         y: e.y - 10,
         duration: 1.2,
         ease: "back.out(1.7)",
-        boxShadow: `0 0 40px 10px royalblue`, // Glowing effect
+        boxShadow: `0 0 40px 10px royalblue`,
       });
     };
 
@@ -22,7 +22,7 @@ export const CursorEffect = () => {
     return () => {
       window.removeEventListener("mousemove", handleCursorMove);
     };
-  }, []); // Add empty dependency array to ensure the effect runs once.
+  }, []);
 
   return (
     <div

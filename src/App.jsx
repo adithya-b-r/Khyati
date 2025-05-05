@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import { Navbar } from './Components/Navbar'
 import { CursorEffect } from './Components/CursorEffect'
+import { Home } from './Pages/Home/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <CursorEffect />
       <Navbar />
+      {/* <Home/> */}
     </>
   )
 }

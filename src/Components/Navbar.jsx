@@ -76,7 +76,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav ref={navRef} className="w-full h-[10vh] bg-blue-600 flex justify-between pl-5 pr-8">
+    <nav ref={navRef} className="w-full h-[10vh] bg-blue-600 flex justify-between pl-5 pr-8 fixed top-0 left-0">
       <div id="logo" className="flex h-full gap-3 text-white justify-between items-center select-none">
         <img className="w-14 h-14" src="/imgs/logo.png" alt="" />
         <h4 className="font-bold text-2xl hover:scale-110 duration-500">
