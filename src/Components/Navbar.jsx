@@ -76,9 +76,9 @@ export const Navbar = () => {
   }
 
   return (
-    <nav ref={navRef} className="w-full h-[10vh] bg-blue-600 flex justify-between pl-5 pr-8 fixed top-0 left-0">
+    <nav ref={navRef} className="w-[95%] mx-[2.5%] md:h-[10vh] h-[8.5vh] bg-gray-600/50 flex justify-between pl-5 pr-8 fixed top-4 left-0 z-12 rounded-full">
       <div id="logo" className="flex h-full gap-3 text-white justify-between items-center select-none">
-        <img className="w-14 h-14" src="/imgs/logo.png" alt="" />
+        <img className="w-12 h-12" src="/imgs/logo.png" alt="" />
         <h4 className="font-bold text-2xl hover:scale-110 duration-500">
           <span>K</span>
           <span>h</span>
@@ -90,20 +90,20 @@ export const Navbar = () => {
       </div>
 
       <div id="menu" className={`hidden md:flex h-full justify-between gap-8 items-center text-white font-semibold tracking-wide`}>
-        <a className='hover:pb-3 transition-all duration-300' href=''>Home</a>
-        <a className='hover:pb-3 transition-all duration-300' href="">About Us</a>
-        <a className='hover:pb-3 transition-all duration-300' href="">Services</a>
-        <a className='hover:pb-3 transition-all duration-300' href="">Gallery</a>
-        <a className='hover:pb-3 transition-all duration-300' href="">FAQs</a>
+        <a className='hover:pb-3 hover:text-blue-300 transition-all duration-300' href=''>Home</a>
+        <a className='hover:pb-3 hover:text-blue-300 transition-all duration-300' href="">About Us</a>
+        <a className='hover:pb-3 hover:text-blue-300 transition-all duration-300' href="">Services</a>
+        <a className='hover:pb-3 hover:text-blue-300 transition-all duration-300' href="">Gallery</a>
+        <a className='hover:pb-3 hover:text-blue-300 transition-all duration-300' href="">FAQs</a>
       </div>
 
       {/* style={{background: "", backdropFilter: "blur(10px)"}} */}
-      <div id="mobMenu" className={`${!menuToggle ? 'hidden' : 'block'} absolute top-[9.90vh] left-0 h-[40vh] w-[85vw] mx-[7.5vw] flex flex-col justify-around items-center text-white text-xl font-semibold bg-blue-600`} >
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Services</a>
-        <a href="">Gallery</a>
-        <a href="">FAQs</a>
+      <div id="mobMenu" className={`${!menuToggle ? 'hidden' : 'block'} absolute top-[9vh] left-0 h-[40vh] w-[79vw] mx-[8.3vw] flex flex-col justify-around items-center text-white text-xl font-semibold bg-gray-600/70`} >
+        <a className='hover:pb-3 hover:pt-3 hover:text-blue-600 transition-all duration-400 w-full text-center' href="">Home</a>
+        <a className='hover:pb-3 hover:pt-3 hover:text-blue-600 transition-all duration-400 w-full text-center' href="">About Us</a>
+        <a className='hover:pb-3 hover:pt-3 hover:text-blue-600 transition-all duration-400 w-full text-center' href="">Services</a>
+        <a className='hover:pb-3 hover:pt-3 hover:text-blue-600 transition-all duration-400 w-full text-center' href="">Gallery</a>
+        <a className='hover:pb-3 hover:pt-3 hover:text-blue-600 transition-all duration-400 w-full text-center' href="">FAQs</a>
       </div>
 
       <div id='mob' className='md:hidden flex text-white text-3xl items-center font-semibold cursor-pointer'>
